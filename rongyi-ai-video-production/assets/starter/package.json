@@ -1,0 +1,6 @@
+{
+  "name": "{{PACKAGE_NAME}}",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Contract-driven AI commercial video production workspace."
+}
