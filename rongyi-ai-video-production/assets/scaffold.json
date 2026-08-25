@@ -1,0 +1,62 @@
+{
+  "emptyDirectories": [
+    "01_Content/Topics",
+    "01_Content/Research",
+    "01_Content/Published",
+    "02_Assets/Registry",
+    "02_Assets/Brand",
+    "02_Assets/Avatar/Human",
+    "02_Assets/Avatar/Providers",
+    "02_Assets/Background",
+    "02_Assets/Music",
+    "02_Assets/Fonts",
+    "02_Assets/Templates",
+    "03_Pipeline/Contracts",
+    "03_Pipeline/FFmpeg",
+    "03_Pipeline/Remotion",
+    "03_Pipeline/Subtitle",
+    "03_Pipeline/Components",
+    "04_Render/Raw",
+    "04_Render/Processing",
+    "04_Render/Output",
+    "05_AI_Avatar/Providers",
+    "05_AI_Avatar/API",
+    "05_AI_Avatar/Prompts",
+    "06_Automation/Production",
+    "06_Automation/Scripts",
+    "06_Automation/Jobs",
+    "06_Automation/Tests",
+    "06_Automation/Logs",
+    "07_Platform",
+    "08_Analytics/Metrics",
+    "08_Analytics/Reports",
+    "08_Analytics/Experiments",
+    "10_Backup"
+  ],
+  "productionTemplates": [
+    {
+      "source": "01_Content/Creative_Script_Lab/_template/idea.md",
+      "target": "01_Content/Creative_Script_Lab/{production_id}/idea.md"
+    },
+    {
+      "source": "01_Content/Creative_Script_Lab/_template/research-notes.md",
+      "target": "01_Content/Creative_Script_Lab/{production_id}/research-notes.md"
+    },
+    {
+      "source": "01_Content/Creative_Script_Lab/_template/script-draft.md",
+      "target": "01_Content/Creative_Script_Lab/{production_id}/script-draft.md"
+    },
+    {
+      "source": "01_Content/Creative_Script_Lab/_template/scene-plan.md",
+      "target": "01_Content/Creative_Script_Lab/{production_id}/scene-plan.md"
+    },
+    {
+      "source": "01_Content/Creative_Briefs/_template/brief.md",
+      "target": "01_Content/Creative_Briefs/{production_id}/brief.md"
+    }
+  ],
+  "productionEmptyDirectories": [
+    "01_Content/Scripts/{production_id}",
+    "06_Automation/Jobs/{production_id}"
+  ]
+}
