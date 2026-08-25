@@ -11,9 +11,44 @@ Its core function is intentionally small:
 
 It does not install dependencies, generate video code, connect APIs, or include media and credentials.
 
+## Install
+
+### One-command install
+
+If Node.js and npm are available, install the Skill for Codex with the open-source [Skills CLI](https://github.com/vercel-labs/skills):
+
+```bash
+npx skills add https://github.com/w1nterzzz/rongyi-ai-video-production-skill/tree/main/rongyi-ai-video-production -g -a codex -y
+```
+
+- `-g` installs at user level, so the Skill is available across projects.
+- `-a codex` targets Codex.
+- `-y` accepts the installation prompts automatically.
+
+### Install with Codex
+
+You can also ask Codex to use its built-in Skill installer:
+
+```text
+Use $skill-installer to install:
+https://github.com/w1nterzzz/rongyi-ai-video-production-skill/tree/main/rongyi-ai-video-production
+```
+
+### Manual install
+
+Codex discovers user-level Skills in `$HOME/.agents/skills`. To install without an installer:
+
+```bash
+mkdir -p "$HOME/.agents/skills"
+git clone --depth 1 https://github.com/w1nterzzz/rongyi-ai-video-production-skill.git
+cp -R rongyi-ai-video-production-skill/rongyi-ai-video-production "$HOME/.agents/skills/"
+```
+
+Open Codex and run `/skills` to verify that `rongyi-ai-video-production` appears. If it does not appear, restart Codex once. See the [official OpenAI Skills documentation](https://developers.openai.com/codex/skills) for discovery locations and usage.
+
 ## Use
 
-Install the `rongyi-ai-video-production/` folder as a Codex Skill, then invoke it with:
+Invoke the installed Skill with:
 
 ```text
 Use $rongyi-ai-video-production to initialize my AI video studio.
